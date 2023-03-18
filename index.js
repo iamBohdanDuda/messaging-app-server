@@ -3,7 +3,7 @@ const http = require('http');
 
 const app = express();
 const server = http.createServer(app);
-const WebSocketServer = require('ws').Server;
+const WebSocketServer = require('wss').Server;
 const wss = new WebSocketServer({ server: server });
 
 
